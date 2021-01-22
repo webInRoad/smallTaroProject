@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Taro from "@tarojs/taro";
-import { View, Text, Button } from "@tarojs/components";
+import { View, Text, Button, Image } from "@tarojs/components";
 import AddQuestion from "./addQuestion";
 import "./index.less";
-
+import yes from "../../img/yes.png";
+import no from "../../img/no.png";
 function setStorage(key, value) {
   let str = value;
   if (typeof str == "object") {
@@ -71,6 +72,11 @@ export default class Index extends Component {
                 <View className="question-left">
                   <View className="question-title">{item.title}</View>
                   <View className="question-des">{item.des}</View>
+                </View>
+                <View className="question-right">
+                  <Image className="img" src={yes} />
+                  <Text>1</Text>
+                  <Image className="img" src={no} />
                 </View>
               </View>
             );

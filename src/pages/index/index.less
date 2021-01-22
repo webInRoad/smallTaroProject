@@ -20,6 +20,12 @@
       padding: 0 10PX;
       /* prettier-ignore */
       font-size: 14PX;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .question-left {
+        width: 100%;
+      }
       .question-title {
         /* prettier-ignore */
         font-size: 18PX;
@@ -27,6 +33,22 @@
       .question-des {
         /* prettier-ignore */
         margin-bottom:5PX;
+      }
+      .question-right {
+        /* prettier-ignore */
+        width: 100PX;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* prettier-ignore */
+        height: 80PX;
+        .img {
+          /* prettier-ignore */
+          width: 28PX;
+          /* prettier-ignore */
+          height: 28PX;
+        }
       }
     }
   }
