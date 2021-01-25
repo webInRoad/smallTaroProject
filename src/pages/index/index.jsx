@@ -131,7 +131,7 @@ export default class Index extends Component {
 					})}
 				</View>
 				{/* taro3版本在小程序并不会显示true,taro1估计会 */}
-				{!showQuestionModal || <AddQuestion />}
+				{/* {!showQuestionModal || <AddQuestion />} */}
 				{/* 建议都用三目运算符，而不用|| */}
 				{showQuestionModal ? (
 					<AddQuestion
